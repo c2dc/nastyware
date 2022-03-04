@@ -1,0 +1,4 @@
+.ipynb_checkpoints/
+.vagrant/
+hydra.restore
+host-nastware.log
