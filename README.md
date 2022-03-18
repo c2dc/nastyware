@@ -11,10 +11,8 @@ This testbed was made and tested on the host configuration
 
 ## Using/Reproducing this testbed
 
-```
-$ git clone https://github.com/c2dc/nastyware.git
-$ vagrant up
-```
+    $ git clone https://github.com/c2dc/nastyware.git
+    $ vagrant up
 
 ## Testbed architecture
 ![Testbed architecture](images/testbed.png)
