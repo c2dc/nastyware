@@ -1,13 +1,15 @@
 #!/usr/bin/python3
 
+from tree import newick_format, to_graph
+
 import argparse
-import os
-import sys
+import igraph
 import math
 import ncd
-import igraph
+import os
+import shutil
+import sys
 import tree_simplification as nj
-from tree import newick_format, to_graph
 
 def clustering(directory, compression_name='ppmd', pairing_name='concat',
     is_parallel = True, **kwargs):
@@ -131,4 +133,8 @@ if __name__ == '__main__':
   else:
     with open(a.output, 'wt') as f:
       f.write(out)
+  
+  # Remove tmp/
+  if os.path.exists('tmp'):
+    shutil.rmtree('tmp/')
 

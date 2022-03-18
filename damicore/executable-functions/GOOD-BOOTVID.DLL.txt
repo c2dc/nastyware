@@ -1,3 +1,0 @@
-b'ntoskrnl.exe'          b'MmMapIoSpaceEx'
-b'ntoskrnl.exe' b'HalPrivateDispatchTable'
-b'ntoskrnl.exe'          b'MmUnmapIoSpace'

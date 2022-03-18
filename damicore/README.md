@@ -50,16 +50,16 @@ objects (files).
 The simplest way to use DAMICORE is to provide as argument a directory
 containing all files to be compared:
 
-     $ ./damicore.py examples/texts
+     $ ./damicore.py executable-functions/
 
 This outputs a list of pairs of file name and corresponding cluster index.
 For now we are lacking a good tool to visualize this clustering, but there are
 other tools that might help. We can output intermediate steps into different
 files for analysis:
 
-     $ ./damicore.py examples/texts --ncd-output texts.phylip --format phylip \
-     --tree-output texts.newick --graph-image texts.png --output texts.clusters \
-     --compress gzip
+     $ ./damicore.py executable-functions/ --ncd-output results/texts.phylip --format phylip \
+     --tree-output results/texts.newick --graph-image results/texts.png \
+     --output results/texts.clusters --compress gzip
 
 This outputs the NCD matrix using PHYLIP format, the neighbor-joining tree in
 Newick format (readable by FigTree), an image with a graph visualization and
@@ -68,7 +68,7 @@ the final clusters into another file.
 By default, the script uses PPMd as compressor. If you don't have it installed,
 try using gzip or bzip2:
 
-     $ ./damicore.py examples/texts --compressor gzip
+     $ ./damicore.py executable-functions/ --compressor gzip
 
 For more information on available options, see --help.
 
