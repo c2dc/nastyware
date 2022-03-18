@@ -6,7 +6,6 @@ hydra.restore
 host-nastware.log
 damicore/erro.txt
 damicore/tmp/
-damicore/executable-functions/
 damicore/executable-functions2/
 test.py
 damicore/results/
