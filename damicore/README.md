@@ -72,13 +72,14 @@ try using gzip or bzip2:
 
 For more information on available options, see --help.
 
-## Contact
+## Acknowledgment
 
-If you believe you have found a bug, or would like to ask for a feature, please
-inform me at brunokim@icmc.usp.br.
+Thanks to Bruno Kim who provided the initial python code.
 
 ## License
 
 This software is licensed under the GPLv2.
+
 Texts examples dataset collected by Francisco José Monaco (monaco@icmc.usp.br)
-More informations in https://github.com/brunokim/damicore-python .
+
+More informations in https://github.com/brunokim/damicore-python.

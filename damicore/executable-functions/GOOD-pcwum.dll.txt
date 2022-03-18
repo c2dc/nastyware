@@ -1,0 +1,5 @@
+b'ntdll.dll'           b'RtlCaptureContext'
+b'ntdll.dll'      b'RtlLookupFunctionEntry'
+b'ntdll.dll'            b'RtlVirtualUnwind'
+b'ntdll.dll' b'RtlUnhandledExceptionFilter'
+b'ntdll.dll'          b'NtTerminateProcess'
