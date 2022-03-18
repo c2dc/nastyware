@@ -1,1 +1,0 @@
-b'win32u.dll' b'NtUserCallTwoParam'

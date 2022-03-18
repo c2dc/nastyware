@@ -1,2 +1,0 @@
-b'ntoskrnl.exe'   b'atol'
-b'ntoskrnl.exe' b'strstr'
