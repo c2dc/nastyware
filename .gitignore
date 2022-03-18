@@ -1,4 +1,9 @@
 .ipynb_checkpoints/
 .vagrant/
+.vscode
+__pycache__
 hydra.restore
 host-nastware.log
+damicore/bkp
+damicore/erro.txt
+damicore/tmp/

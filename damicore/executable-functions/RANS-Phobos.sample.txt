@@ -1,0 +1,7 @@
+b'ADVAPI32.dll' b'CryptGenRandom'
+b'KERNEL32.DLL'   b'LoadLibraryA'
+b'KERNEL32.DLL'    b'ExitProcess'
+b'KERNEL32.DLL' b'GetProcAddress'
+b'KERNEL32.DLL' b'VirtualProtect'
+  b'USER32.dll'     b'ShowWindow'
+  b'WS2_32.dll'           b'recv'

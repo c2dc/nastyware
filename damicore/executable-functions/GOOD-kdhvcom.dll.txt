@@ -1,0 +1,5 @@
+b'ntoskrnl.exe'               b'KdDebuggerNotPresent'
+b'ntoskrnl.exe' b'HviIsHypervisorMicrosoftCompatible'
+b'ntoskrnl.exe'               b'MmGetPhysicalAddress'
+b'ntoskrnl.exe'               b'__C_specific_handler'
+b'ntoskrnl.exe'                    b'PoSetHiberRange'
