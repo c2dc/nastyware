@@ -4,7 +4,7 @@
 __pycache__
 hydra.restore
 host-nastware.log
-damicore/erro.txt
+damicore/ignored.txt
 damicore/tmp/
 damicore/executable-functions2/
 test.py
