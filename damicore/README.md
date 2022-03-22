@@ -30,13 +30,15 @@ datasets, datasets with difficult characteristics extraction and text datasets.
 
 ### Installation
 * python 3.10
-* igraph library (visit http://igraph.org/c for more informations)
 * python-igraph (visit http://igraph.org/python for more informations)
+* python-qt4
+     sudo add-apt-repository ppa:rock-core/qt4
+     sudo apt update
+     sudo apt install libqt4-declarative libqt4* libqtcore4 libqtgui4 libqtwebkit4 qt4*
 
 ### Execution
 
-  DAMICORE relies on compressors to calculate the distance between a pair of
-objects (files).
+  DAMICORE relies on compressors to calculate the distance between a pair of objects (files).
 
 * gzip (available in almost all \*nix systems)
 * bzip2 (available in almost all \*nix systems)
@@ -57,9 +59,9 @@ For now we are lacking a good tool to visualize this clustering, but there are
 other tools that might help. We can output intermediate steps into different
 files for analysis:
 
-     $ ./damicore.py executable-functions/ --ncd-output results/texts.phylip --format phylip \
-     --tree-output results/texts.newick --graph-image results/texts.png \
-     --output results/texts.clusters --compress gzip
+     $ ./damicore.py executable-functions/ --ncd-output results/ncd-matrix.phylip --format phylip \
+     --tree-output results/tree.newick --graph-image results/tree-image.png \
+     --output results/final.clusters --compress gzip
 
 This outputs the NCD matrix using PHYLIP format, the neighbor-joining tree in
 Newick format (readable by FigTree), an image with a graph visualization and
