@@ -59,9 +59,7 @@ For now we are lacking a good tool to visualize this clustering, but there are
 other tools that might help. We can output intermediate steps into different
 files for analysis:
 
-     $ ./damicore.py executable-functions/ --ncd-output results/ncd-matrix.phylip --format phylip \
-     --tree-output results/tree.newick --graph-image results/tree-image.png \
-     --output results/final.clusters --compress gzip
+     $ ./damicore.py executable-functions/ --ncd-output results/ncd-matrix.phylip --format phylip --tree-output results/tree.newick --graph-image results/tree-image.png --output results/final.clusters --compress gzip
 
 This outputs the NCD matrix using PHYLIP format, the neighbor-joining tree in
 Newick format (readable by FigTree), an image with a graph visualization and
