@@ -1,0 +1,4 @@
+b'KERNEL32.DLL'   b'LoadLibraryA'
+b'KERNEL32.DLL'    b'ExitProcess'
+b'KERNEL32.DLL' b'GetProcAddress'
+b'KERNEL32.DLL' b'VirtualProtect'
