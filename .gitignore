@@ -1,10 +1,11 @@
+damicore/ignored.txt
+damicore/tmp/
+damicore/executable-functions2/
+notebooks/CreateDataFrame.log
 .ipynb_checkpoints/
 .vagrant/
 .vscode
 __pycache__
 hydra.restore
 host-nastware.log
-damicore/ignored.txt
-damicore/tmp/
-damicore/executable-functions2/
 test.py
