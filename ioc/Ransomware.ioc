@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="ddeebbd4-b5c8-4705-ac12-aeb51dacaf69" last-modified="2022-04-05T23:41:57" xmlns="http://schemas.mandiant.com/2010/ioc">
+  <short_description>Ransomware Indicator</short_description>
+  <description>This indicator was made based on phylogenetic tree created by DAMICORE, as described in https://github.com/c2dc/nastyware/tree/master/damicore.</description>
+  <authored_by>Nilson Sangy</authored_by>
+  <authored_date>2022-04-05T23:24:44</authored_date>
+  <links />
+  <definition>
+    <Indicator operator="OR" id="b2140188-36af-4738-a582-6600bc9ed483">
+      <IndicatorItem id="aa9e69f0-3c5b-4563-b157-87edc1cb01c8" condition="contains">
+        <Context document="FileItem" search="FileItem/FileName" type="mir" />
+        <Content type="string">Avaddon</Content>
+      </IndicatorItem>
+      <Indicator operator="AND" id="1a8ad741-b311-48b9-a297-9a39cfeca53a">
+        <IndicatorItem id="043f44e6-1df2-4a56-8325-3259922f0c01" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string">4FD72C550987C7638E727C9D84B4940692BF94E101D3F5746BC4A8F377E49B37</Content>
+        </IndicatorItem>
+      </Indicator>
+    </Indicator>
+  </definition>
+</ioc>
