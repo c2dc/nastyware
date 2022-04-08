@@ -18,7 +18,6 @@ rule nastyware_branch1
 }
 
 
-// Improving this rule. With 42 false positives.
 rule nastyware_branch2
 {
     meta:
@@ -28,15 +27,27 @@ rule nastyware_branch2
         rule_version = "v1.0"
         malware_type = "ransomware"
 
+    strings:
+        $s1 = "Microsoft Corporation"
+        $s2 = "Microsoft (R) Windows (R) Operating System"
+
+        $g1 = "adprep.dll"
+        $g2 = "dfshim.dll"
+        $g3 = {64 67 67 70 65 78 74} // dggpext
+        $g4 = "mscoree.dll"
+        $g5 = "msdadiag.dll"
+        $g6 = "netfxperf.dll"
+        $g7 = "WindowsAccessBridge-64.dll"
+    
     condition:
         ( pe.imports("kernel32.dll", "GetProcAddress") and pe.imports("kernel32.dll", "ExitProcess") )
         and not
         (   pe.imports("msvcrt.dll", "_amsg_exit")
             or pe.imports("msvcrt.dll", "__C_specific_handler")
             or pe.imports("WS2_32.dll", "recv")
-            or pe.imports("api-ms-win-core-libraryloader-l1-2-0.dll", "DisableThreadLibraryCalls") )
-            
-    
+            or pe.imports("api-ms-win-core-libraryloader-l1-2-0.dll", "DisableThreadLibraryCalls")
+            or any of them )
+
 }
 
 
