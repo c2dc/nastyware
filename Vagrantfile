@@ -5,7 +5,7 @@ Vagrant.configure("2") do |config|
 
   # Windows Server 2016 (victim)
   config.vm.define "windows_server_2016" do |windows_server_2016|
-    windows_server_2016.vm.box = "gusztavvargadr/windows-server"
+    windows_server_2016.vm.box = "StefanScherer/windows_2016"
     windows_server_2016.vm.hostname = "Server2016"
     windows_server_2016.vm.synced_folder ".", "/vagrant", disabled: true
     windows_server_2016.vm.network "private_network", ip: "192.168.56.16/24"
